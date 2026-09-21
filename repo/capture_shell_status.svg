@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="270" viewBox="0 0 960 270" font-family="Consolas,Menlo,'Courier New',monospace">
+  <rect width="960" height="270" fill="#1e1e1e"/>
+  <rect x="0" y="0" width="960" height="32" fill="#323232"/>
+  <circle cx="18" cy="16" r="6" fill="#ff5f57"/>
+  <circle cx="38" cy="16" r="6" fill="#febc2e"/>
+  <circle cx="58" cy="16" r="6" fill="#28c840"/>
+  <text x="480" y="21" text-anchor="middle" font-size="13" fill="#cccccc">cluster.status() —— 已接管集群拓扑</text>
+
+  <text x="16" y="56" font-size="13" fill="#6a9955">$ mysqlsh --uri root@172.98.0.10:3306 --js -e "dba.getCluster('mgrCluster').status()"</text>
+  <text x="16" y="80" font-size="13" fill="#ffffff">"primary": "172.98.0.10:3306"</text>
+  <text x="16" y="102" font-size="13" fill="#ffffff">"status": "OK",  "statusText": "Cluster is ONLINE and can tolerate up to ONE failure."</text>
+  <text x="16" y="124" font-size="13" fill="#ffffff">"topologyMode": "Single-Primary",  "ssl": "DISABLED"</text>
+  <text x="16" y="150" font-size="13" fill="#569cd6">"topology"</text>
+  <text x="16" y="172" font-size="13" fill="#d4d4d4">172.98.0.10:3306   memberRole=PRIMARY    mode=R/W    status=ONLINE</text>
+  <text x="16" y="192" font-size="13" fill="#d4d4d4">172.98.0.11:3306   memberRole=SECONDARY  mode=R/O    status=ONLINE</text>
+  <text x="16" y="212" font-size="13" fill="#d4d4d4">172.98.0.12:3306   memberRole=SECONDARY  mode=R/O    status=ONLINE</text>
+  <text x="16" y="246" font-size="13" fill="#6a9955"># 单主三节点，容错 1 台；SECONDARY 自动 R/O</text>
+</svg>
