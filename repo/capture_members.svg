@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="250" viewBox="0 0 960 250" font-family="Consolas,Menlo,'Courier New',monospace">
+  <rect width="960" height="250" fill="#1e1e1e"/>
+  <rect x="0" y="0" width="960" height="32" fill="#323232"/>
+  <circle cx="18" cy="16" r="6" fill="#ff5f57"/>
+  <circle cx="38" cy="16" r="6" fill="#febc2e"/>
+  <circle cx="58" cy="16" r="6" fill="#28c840"/>
+  <text x="480" y="21" text-anchor="middle" font-size="13" fill="#cccccc">MGR 组复制成员状态</text>
+
+  <text x="16" y="56" font-size="13" fill="#6a9955">$ mysql -e "SELECT member_host,member_port,member_state,member_role ..."</text>
+  <text x="16" y="78" font-size="13" fill="#ffffff">===== 组复制成员 =====</text>
+  <text x="16" y="100" font-size="13" fill="#d4d4d4">member_host     member_port  member_state  member_role</text>
+  <text x="16" y="122" font-size="13" fill="#6a9955">172.98.0.10     3306         ONLINE        PRIMARY</text>
+  <text x="16" y="142" font-size="13" fill="#d4d4d4">172.98.0.11     3306         ONLINE        SECONDARY</text>
+  <text x="16" y="162" font-size="13" fill="#d4d4d4">172.98.0.12     3306         ONLINE        SECONDARY</text>
+  <text x="16" y="196" font-size="13" fill="#6a9955"># 三节点全部 ONLINE，单主模式：mysql0 为 PRIMARY</text>
+</svg>
